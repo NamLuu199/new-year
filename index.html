@@ -1,0 +1,57 @@
+
+<html>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+<style>
+
+/* basic styles for black background and crosshair cursor */
+body {
+	background-color: #feebd3;
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;
+}
+h1,h2,h2{
+ text-align:center;
+}
+canvas {
+	cursor: crosshair;
+	dish2lay: block;
+}
+div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+	
+}
+h1,h2{
+color:#ed2b22;
+}
+</style>
+<body>
+<audio id="audio" controls >
+  <source src="music.mp3" type="audio/mpeg">
+</audio>
+ <div>
+ <h1>NAM LƯU</h1>
+ <h2>Chúc tất cả anh chị em năm mới</h2>
+ <h2>Vạn sự như ý</h2>
+ <h2>Tỷ sự như mơ</h2>
+ <h2>Làm ăn thuận lợi</h2>
+ <h2>Phát tài phát lộc</h2>
+ </div>
+<!-- setuh2 our canvas element -->
+<canvas id="canvas">Canvas is not suh2h2orted in your browser.</canvas>
+<script type="text/javascript" src="firework.js"></script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+	$( document ).ready(function() {
+	$('#audio').get(0).play();
+	});
+	
+</script>
+
+</body>
+</html>
