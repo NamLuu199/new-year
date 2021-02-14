@@ -1,5 +1,9 @@
 
 <html>
+<meta property="og:title" content="Hí Anh Em">
+<meta property="og:description" content="Chúc mừng năm mới">
+<meta property="og:image" content="Untitled-1.jpg">
+<meta property="og:url" content="https://namluu199.github.io/new-year/">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
 <style>
@@ -10,8 +14,14 @@ body {
 	margin: 0;
 	font-family: 'Open Sans', sans-serif;
 }
-h1,h2,h2{
+h1,h2{
  text-align:center;
+}
+h1{
+ font-size:80px;
+}
+h2{
+ font-size:45px;
 }
 canvas {
 	cursor: crosshair;
@@ -29,10 +39,9 @@ h1,h2{
 color:#ed2b22;
 }
 </style>
+
 <body>
-<audio id="audio" controls >
-  <source src="music.mp3" type="audio/mpeg">
-</audio>
+	<audio id="audio" src="music.mp3" loop="loop"></audio>
  <div>
  <h1>NAM LƯU</h1>
  <h2>Chúc tất cả anh chị em năm mới</h2>
@@ -47,11 +56,9 @@ color:#ed2b22;
 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
-	$( document ).ready(function() {
-	$('#audio').get(0).play();
-	});
-	
+ window.onload = function(){
+ document.getElementById("audio").play();
+ }
 </script>
-
 </body>
 </html>
