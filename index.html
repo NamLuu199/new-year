@@ -41,8 +41,13 @@ color:#ed2b22;
 </style>
 
 <body>
+ <audio id="audio" src="music.mp3" loop="loop"></audio>
+ 
  <div>
+ 
  <h1>NAM LƯU</h1>
+ <p style="text-align:center"><button onclick="playSound()" style="text-align:center"> Dí để nghe nhạc nha anh em</button></p>
+ 
  <h2>Chúc tất cả anh chị em năm mới</h2>
  <h2>Vạn sự như ý</h2>
  <h2>Tỷ sự như mơ</h2>
@@ -53,5 +58,11 @@ color:#ed2b22;
 <canvas id="canvas">Canvas is not suh2h2orted in your browser.</canvas>
 <script type="text/javascript" src="firework.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+  function playSound() {
+  var sound = document.getElementById("audio");
+  sound.play();
+}
+</script>
 </body>
 </html>
